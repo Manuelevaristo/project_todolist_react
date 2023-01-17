@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "Estudar"
+    },
+    {
+      "id": 2,
+      "task": "Meditar"
+    },
+    {
+      "task": "Cozinhar",
+      "id": 3
+    }
+  ]
+}

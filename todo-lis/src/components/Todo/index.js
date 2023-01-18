@@ -29,7 +29,7 @@ function Todo() {
         task: taskInput
       })
       setItemObject(res.data)
-      setTaskInput(" ")
+      setTaskInput("")
       if(res.data){
         setItemsList([ itemObject, ...itemsList])
 
@@ -52,6 +52,8 @@ function Todo() {
           placeholder="Adicione uma tarefa"
           onChange={(e)=>setTaskInput(e.target.value)}
           value={taskInput}
+          minLength="3"
+          required
         />
 
         <button className="adicionar" type="submit">Adicionar</button>

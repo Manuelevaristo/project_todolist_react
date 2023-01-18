@@ -1,5 +1,6 @@
 import React from "react";
 import './TaskList.css'
+import {Link} from "react-router-dom"
 // import { tasks } from "../../mocks/tasks"
 
 
@@ -12,7 +13,11 @@ const TaskList = ({itemsList}) =>{
 
         <ul className="todo-list">
         {itemsList.map((task, index) => (
-          <li key={index}>{task.task}</li>
+          <>
+          <Link to={`/single/${task.id}`}>
+            <li key={index}>{task.task} </li>
+          </Link>
+          </>
         ))}
       </ul>
     )
